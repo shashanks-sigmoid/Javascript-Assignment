@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Javascript WebApp</title>
+</head>
+
+<body>
+    <div class="App">
+        <div class="table-container">
+            <table class='table'>
+                <thead class="table-header">
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Country</th>
+                        <th>Email</th>
+                        <th>DOB</th>
+                        <th>Age</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="t-body"></tbody>
+            </table>
+
+        </div>
+        <div class="form-container">
+            <h2>Form to add Entries</h2>
+            <form method="POST" class="form" action="#">
+                <div class="inputs">
+                    <div>
+                        <label for="name">Name:</label>
+                    </div>
+                    <div>
+                        <input type="text" name="name" id="name" required />
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div>
+                        <label for="gender">Gender:</label>
+                    </div>
+                    <div>
+                        <span>Male <input type="radio" name="gender" value="male" checked /></span>
+                        <span>Female <input type="radio" name="gender" value="female" /></span>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div>
+                        <label for="country">Country: </label>
+                    </div>
+                    <div>
+                        <select name="country" id="country">
+                            <option value="india">India</option>
+                            <option value="usa">USA</option>
+                            <option value="australia">Australia</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div>
+                        <label for="email">Email: </label>
+                    </div>
+                    <div>
+                        <input type="email" name="email" id="email" />
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div>
+                        <label for="dob">DOB:</label>
+                    </div>
+                    <div>
+                        <input type="date" name="dob" id="dob" required />
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div>
+                        <label for="age">Age:</label>
+                    </div>
+                    <div>
+                        <input type="number" name="age" id="age" required />
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn" id="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
