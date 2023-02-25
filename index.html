@@ -12,6 +12,7 @@
 <body>
     <div class="App">
         <div class="table-container">
+            <h3 id="buffer">Loading Data ...</h3>
             <table class='table'>
                 <thead class="table-header">
                     <tr>
@@ -21,7 +22,6 @@
                         <th>Email</th>
                         <th>DOB</th>
                         <th>Age</th>
-                        <th>Delete</th>
                     </tr>
                 </thead>
                 <tbody id="t-body"></tbody>
@@ -29,8 +29,8 @@
 
         </div>
         <div class="form-container">
-            <h2>Form to add Entries</h2>
-            <form method="POST" class="form" action="#">
+            <h2>Form to add new Entries</h2>
+            <form action="#" method="POST" class="form" id="form">
                 <div class="inputs">
                     <div>
                         <label for="name">Name:</label>
@@ -88,7 +88,7 @@
             </form>
         </div>
     </div>
-
+    <script src="app.js"></script>
 
 </body>
 

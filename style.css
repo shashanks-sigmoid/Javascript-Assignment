@@ -42,6 +42,14 @@ tr:nth-child(even) {
     background-color: rgb(161, 199, 246);
 }
 
+#buffer {
+    margin: 1rem 0;
+}
+
+.buffer-done {
+    display: none;
+}
+
 .form-container {
     padding: 2rem 4rem;
     background-color: rgb(205, 205, 205);
@@ -69,4 +77,20 @@ tr:nth-child(even) {
     color: white;
     background-color: black;
     margin: 1rem 0;
+}
+
+.delete-btn {
+    cursor: pointer;
+    border-radius: 100px;
+    padding: 0.5rem 0.5rem;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: black;
+}
+
+.delete-btn:hover {
+    color: red;
 }
